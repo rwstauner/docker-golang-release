@@ -1,0 +1,11 @@
+sudo: required
+
+services:
+  - docker
+
+env:
+  - IMAGE=golang-release
+
+script:
+  - docker build -t $IMAGE .
+  - docker run $IMAGE make test
