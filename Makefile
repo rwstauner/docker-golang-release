@@ -8,3 +8,4 @@ test:
 	bats --version
 	zip -v
 	which gox
+	which golint

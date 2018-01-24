@@ -16,6 +16,9 @@ RUN apk --update add \
     zip \
   && rm -rf /var/cache/apk/*
 
-RUN go get github.com/mitchellh/gox
+RUN go get \
+    github.com/mitchellh/gox \
+    github.com/golang/lint/golint \
+  && true
 
 CMD ["/bin/bash"]
