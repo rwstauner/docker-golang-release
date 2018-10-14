@@ -3,6 +3,9 @@ sudo: required
 services:
   - docker
 
+go:
+  - 1.x
+
 env:
   - IMAGE=golang-release
 
