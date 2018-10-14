@@ -1,20 +1,12 @@
-FROM golang:alpine
+FROM golang:latest
 MAINTAINER Randy Stauner <randy@magnificent-tears.com>
 
-RUN apk --update add \
-    ca-certificates \
-# repo meta
-    git \
-# build
-    make \
+RUN apt-get update && apt-get install -y --no-install-recommends \
 # cli tests
-    bash \
     bats \
-# better ps for testing
-    procps \
 # packaging releases
     zip \
-  && rm -rf /var/cache/apk/*
+  && rm -rf /var/lib/apt/lists/*
 
 RUN go get -u \
     github.com/mitchellh/gox \
