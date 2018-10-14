@@ -5,6 +5,7 @@
 
 Built from `golang:alpine` with additional tools installed:
 
+- [`golint`][golint] for finding lint
 - [`gox`][gox]  for cross compiling
 - `make` for making
 - [`bats`][bats] for testing CLI apps
@@ -26,5 +27,6 @@ Built from `golang:alpine` with additional tools installed:
 
     docker run -it --rm -v /some/path:/src -w /src rwstauner/golang-release make
 
+[golint]: https://github.com/golang/lint
 [gox]: https://github.com/mitchellh/gox
 [bats]: https://github.com/sstephenson/bats
