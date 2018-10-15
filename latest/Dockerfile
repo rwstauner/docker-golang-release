@@ -1,5 +1,7 @@
+# Generated.
+
 FROM golang:latest
-MAINTAINER Randy Stauner <randy@magnificent-tears.com>
+MAINTAINER Randy Stauner <randy@r4s6.net>
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 # cli tests

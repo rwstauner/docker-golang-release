@@ -1,0 +1,11 @@
+FROM golang:{{tag}}
+MAINTAINER Randy Stauner <randy@r4s6.net>
+
+{{packages}}
+
+RUN go get -u \
+    github.com/mitchellh/gox \
+    golang.org/x/lint/golint \
+  && true
+
+CMD ["/bin/bash"]

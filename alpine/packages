@@ -1,0 +1,14 @@
+RUN apk --update add \
+    ca-certificates \
+# repo meta
+    git \
+# build
+    make \
+# cli tests
+    bash \
+    bats \
+# better ps for testing
+    procps \
+# packaging releases
+    zip \
+  && rm -rf /var/cache/apk/*
