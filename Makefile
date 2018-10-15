@@ -2,7 +2,7 @@ SHELL = /bin/bash
 IMAGE = rwstauner/golang-release
 TAGS = latest alpine
 
-all: test
+all: build
 
 build: dockerfiles
 	for tag in $(TAGS); do \

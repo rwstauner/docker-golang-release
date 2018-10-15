@@ -21,7 +21,7 @@ Built from `golang` ([latest][latest] and [alpine][alpine] tags) with additional
 
     git clone git@github.com:rwstauner/docker-golang-release.git
     cd docker-golang-release
-    docker build -t golang-release .
+    make
 
 ## Use
 
