@@ -3,7 +3,7 @@
 [![docker hub](https://img.shields.io/badge/docker-golang--release-blue.svg)](https://hub.docker.com/r/rwstauner/golang-release)
 [![Build Status](https://travis-ci.org/rwstauner/docker-golang-release.svg?branch=master)](https://travis-ci.org/rwstauner/docker-golang-release)
 
-Built from `golang` (`latest` and `alpine` tags) with additional tools installed:
+Built from `golang` ([`latest`][latest] and [`alpine`][alpine] tags) with additional tools installed:
 
 - [`golint`][golint] for finding lint
 - [`gox`][gox]  for cross compiling
@@ -30,3 +30,5 @@ Built from `golang` (`latest` and `alpine` tags) with additional tools installed
 [golint]: https://github.com/golang/lint
 [gox]: https://github.com/mitchellh/gox
 [bats]: https://github.com/sstephenson/bats
+[latest]: https://github.com/rwstauner/docker-golang-release/blob/master/latest/Dockerfile
+[alpine]: https://github.com/rwstauner/docker-golang-release/blob/master/alpine/Dockerfile
