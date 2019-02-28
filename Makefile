@@ -21,6 +21,7 @@ test: build
 		echo; echo "# $$tag"; \
 		docker run $(IMAGE):$$tag bash -c ' go version \
 			&& git --version \
+			&& gpg --version \
 			&& make --version \
 			&& bash --version \
 			&& bats --version \

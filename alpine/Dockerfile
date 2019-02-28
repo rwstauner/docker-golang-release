@@ -7,6 +7,7 @@ RUN apk --update add \
     ca-certificates \
 # repo meta
     git \
+    gnupg \
 # build
     make \
 # cli tests
