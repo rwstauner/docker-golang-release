@@ -14,6 +14,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN go get -u \
     github.com/mitchellh/gox \
     golang.org/x/lint/golint \
-  && true
+  && cp /go/bin/* /usr/local/bin/
 
 CMD ["/bin/bash"]

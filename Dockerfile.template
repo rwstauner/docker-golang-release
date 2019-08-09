@@ -6,6 +6,6 @@ MAINTAINER Randy Stauner <randy@r4s6.net>
 RUN go get -u \
     github.com/mitchellh/gox \
     golang.org/x/lint/golint \
-  && true
+  && cp /go/bin/* /usr/local/bin/
 
 CMD ["/bin/bash"]
