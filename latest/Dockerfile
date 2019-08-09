@@ -6,6 +6,7 @@ MAINTAINER Randy Stauner <randy@r4s6.net>
 RUN apt-get update && apt-get install -y --no-install-recommends \
 # cli tests
     bats \
+    gnupg \
 # packaging releases
     zip \
   && rm -rf /var/lib/apt/lists/*
