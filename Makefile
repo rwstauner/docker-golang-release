@@ -6,7 +6,7 @@ all: build
 
 build: dockerfiles
 	for tag in $(TAGS); do \
-		docker build -t $(IMAGE):$$tag $$tag/; \
+		docker build --pull -t $(IMAGE):$$tag $$tag/; \
 	done
 
 dockerfiles:
